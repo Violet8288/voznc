@@ -212,7 +212,7 @@
         playPauseBtn.addEventListener("click", () => {
             if (audio.paused) {
                 audio.play().catch(() => alert("El navegador bloqueó la reproducción automática. Toca el botón otra vez."));
-                playPauseBtn.textContent = "⏸";
+                playPauseBtn.textContent = "||";
                 waveContainer.style.opacity = "1";
             } else {
                 audio.pause();
